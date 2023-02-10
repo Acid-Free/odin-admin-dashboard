@@ -73,3 +73,16 @@ p {
 .header > .lower > .buttons > * {
   margin-left: 1em;
 }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.logo,
+.main > *,
+.misc > * {
+  display: flex;
+  gap: 0.5em;
+}
