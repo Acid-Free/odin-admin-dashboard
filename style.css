@@ -145,7 +145,7 @@ form > #search {
 .content {
   padding: 1em;
   display: grid;
-  grid-template-columns: 4fr min-content;
+  grid-template-columns: 4fr max-content;
   gap: 1em;
 }
 
@@ -226,7 +226,32 @@ form > #search {
   border: 1px solid green;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 5px;
+}
+
+.announcement-list > .announcement-entry {
+  max-width: 400px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid green;
+}
+
+.announcement-list > .announcement-entry:last-child {
+  border: none;
+}
+
+.announcement-entry > .title {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.announcement-entry > .description {
+  margin-top: 2px;
+  font-size: small;
+  max-width: 300px;
+  max-height: 200px;
+  overflow: hidden;
+  hyphens: auto;
+  text-overflow: ellipsis;
 }
 
 .content .trending-list {
