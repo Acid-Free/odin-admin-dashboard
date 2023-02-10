@@ -86,3 +86,37 @@ p {
   display: flex;
   gap: 0.5em;
 }
+
+.content {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1em;
+}
+
+.content > .projects {
+  grid-area: 1 / 1 / -1 / 2;
+}
+
+.content > .projects > .project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.project-list > .project-entry {
+  width: 200px;
+}
+
+.content .content-header {
+  margin-bottom: 10px;
+}
+
+.content > .announcements {
+  grid-area: 1 / 2 / 2 / -1;
+}
+
+.content > .trending {
+  grid-area: 2 / 2 / -1 / -1;
+}
