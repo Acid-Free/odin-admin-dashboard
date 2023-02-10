@@ -235,7 +235,6 @@ form > #search {
 
 .main > *:active,
 .misc > *:active {
-  border-top: 1px solid;
   background-color: green;
 }
 
