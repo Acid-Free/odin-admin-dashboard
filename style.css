@@ -2,20 +2,19 @@
   font-family: Roboto;
   src: url(assets/Roboto-Regular.ttf);
 }
+
 * {
   font-family: Roboto, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-html {
-  height: 100%;
-}
+
 body {
-  height: 100%;
   margin: 0px;
   display: grid;
   grid-template-columns: auto 4fr;
   grid-template-rows: 80px auto;
   background-color: black;
+  border: 1px solid green;
 }
 
 button {
@@ -127,6 +126,22 @@ form > #search {
   gap: 3em;
 }
 
+.sidebar > .logo,
+.logo > .dashboard-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > .dashboard-icon > * {
+  font-size: x-large;
+}
+
+.dashboard-icon > ion-icon[name="remove-outline"] {
+  font-size: xx-large;
+  --ionicon-stroke-width: 50px;
+}
+
 .sidebar > .main,
 .sidebar > .misc {
   min-width: 100px;
@@ -135,11 +150,35 @@ form > #search {
   gap: 0.8em;
 }
 
+.main > .selected {
+  border: 1px solid green;
+  background-color: green;
+}
+
+.selected > * {
+  color: black;
+  background-color: green;
+}
+
 .logo,
 .main > *,
 .misc > * {
   display: flex;
   gap: 0.5em;
+}
+
+.main > * > p {
+  font-size: large;
+  font-weight: 800;
+}
+
+.misc > * > p {
+  font-size: large;
+}
+
+.main > * > ion-icon,
+.misc > * > ion-icon {
+  font-size: 1.3rem;
 }
 
 .content {
