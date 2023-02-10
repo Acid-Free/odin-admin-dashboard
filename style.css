@@ -3,16 +3,73 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: auto auto;
+  border: 1px solid;
+}
+
+p {
+  margin: 0px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border-radius: 100%;
 }
 
 .header {
   grid-column: 2 / -1;
+  padding: 5px 20px;
+  border: 1px solid;
 }
 
 .sidebar {
   grid-area: 1 / 1 / -1 / 2;
+  border: 1px solid;
 }
 
 .content {
   grid-area: 2 / 2 / -1 / -1;
+  border: 1px solid;
+}
+
+.header > .upper {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.header > .upper > form {
+  flex: 1;
+  display: flex;
+  gap: 1em;
+}
+
+.header > .upper > form > #search {
+  flex: 1;
+}
+
+.header > .upper > .upper-profile {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.header > .lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > .lower > .lower-profile {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.header > .lower > .buttons > * {
+  margin-left: 1em;
 }
