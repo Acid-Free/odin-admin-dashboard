@@ -12,7 +12,7 @@ body {
   margin: 0px;
   display: grid;
   grid-template-columns: auto 4fr;
-  grid-template-rows: 80px auto;
+  grid-template-rows: min-content auto;
   background-color: black;
   border: 1px solid green;
 }
@@ -31,6 +31,7 @@ button:active {
 }
 
 input {
+  font-size: large;
   border: 1px solid green;
   background-color: black;
 }
@@ -60,7 +61,7 @@ ion-icon {
 
 .header {
   grid-column: 2 / -1;
-  padding: 5px 20px;
+  padding: 20px 20px 10px 20px;
   border: 1px solid green;
 }
 
@@ -78,8 +79,7 @@ ion-icon {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  gap: 1em;
+  gap: 6em;
 }
 
 .header > .upper > form {
@@ -89,8 +89,16 @@ ion-icon {
 }
 
 form > button {
+  padding: 1px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+form > button > ion-icon {
+  font-size: 25px;
 }
 
 form > #search {
@@ -98,12 +106,32 @@ form > #search {
 }
 
 .header > .upper > .upper-profile {
+  margin-right: 30px;
   display: flex;
   align-items: center;
   gap: 1em;
 }
 
+.upper-profile > button {
+  padding: 1px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upper-profile > button > ion-icon {
+  font-size: 30px;
+}
+
+.upper-profile > .profile-name {
+  font-size: large;
+  font-weight: 800;
+}
+
 .header > .lower {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,8 +143,25 @@ form > #search {
   gap: 1em;
 }
 
+.lower-profile > div > .hi-there {
+  font-size: large;
+}
+
+.lower-profile > div > .profile-with-tag {
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.lower-profile > .icon {
+  width: 50px;
+  height: 50px;
+}
+
 .header > .lower > .buttons > * {
   margin-left: 1em;
+  padding: 10px 30px;
+  font-size: large;
+  font-weight: 800;
 }
 
 .sidebar {
