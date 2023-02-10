@@ -172,7 +172,7 @@ form > #search {
   border: 1px solid green;
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 3.6em;
 }
 
 .sidebar > .logo,
