@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Roboto;
+  src: url(assets/Roboto-Regular.ttf);
+}
+* {
+  font-family: Roboto, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 html {
   height: 100%;
 }
@@ -154,6 +162,37 @@ form > #search {
 .project-list > .project-entry {
   padding: 20px;
   border: 1px solid green;
+}
+
+.project-entry > .title {
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.project-entry > .description {
+  margin-top: 10px;
+  font-size: large;
+}
+
+.project-entry > .buttons {
+  display: flex;
+  gap: 0.5em;
+  justify-content: flex-end;
+}
+
+.project-entry > .buttons > div {
+  margin-top: 20px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-entry > .buttons > div:active {
+  background-color: green;
 }
 
 .content .content-header {
