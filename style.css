@@ -126,3 +126,15 @@ p {
   flex-direction: column;
   gap: 1em;
 }
+
+.content .trending-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.trending-list > .trending-entry {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
