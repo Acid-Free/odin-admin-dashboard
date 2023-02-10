@@ -169,6 +169,7 @@ form > #search {
 
 .sidebar {
   grid-area: 1 / 1 / -1 / 2;
+  padding: 20px;
   border: 1px solid green;
   display: flex;
   flex-direction: column;
@@ -218,13 +219,13 @@ form > #search {
 .misc > * {
   display: flex;
   gap: 0.5em;
-  padding: 5px 20px;
-  border-top: 1px solid green;
+  padding: 5px 0px;
+  border-bottom: 1px solid green;
 }
 
 .main > *:last-child,
 .misc > *:last-child {
-  border-bottom: 1px solid green;
+  border: none;
 }
 
 .main > *:hover,
