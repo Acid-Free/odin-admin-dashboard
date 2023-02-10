@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: auto 4fr;
   grid-template-rows: auto auto;
   border: 1px solid green;
   background-color: black;
@@ -110,9 +110,18 @@ form > #search {
 }
 
 .sidebar {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 3em;
+}
+
+.sidebar > .main,
+.sidebar > .misc {
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
 }
 
 .logo,
@@ -141,7 +150,8 @@ form > #search {
 }
 
 .project-list > .project-entry {
-  width: 200px;
+  padding: 10px;
+  border: 1px solid green;
 }
 
 .content .content-header {
@@ -157,12 +167,16 @@ form > #search {
 }
 
 .content .announcement-list {
+  padding: 10px;
+  border: 1px solid green;
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
 
 .content .trending-list {
+  padding: 10px;
+  border: 1px solid green;
   display: flex;
   flex-direction: column;
   gap: 1em;
